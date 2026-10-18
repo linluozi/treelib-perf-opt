@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "treelib-perf-opt"
+version = "1.8.0.post1"
+authors = [
+  { name = "caesar0301 and treelib contributors (original)" },
+  { name = "treelib-perf-opt contributors (optimizations)" },
+]
+description = "Performance and robustness rewrite of treelib: linear-time traversal, O(n) aggregates, no recursion limit on rendering"
+readme = "README.md"
+# Upstream is Apache-2.0, so this derivative must be too. Declaring anything else
+# here (GPL, MIT, ...) would be a licence violation.
+license = { text = "Apache-2.0" }
+requires-python = ">=3.8"
+dependencies = ["six>=1.13.0"]
+keywords = ["tree", "data structure", "algorithms", "performance"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=6.0.0"]
+bench = ["matplotlib>=3.5"]
+
+[project.urls]
+Homepage = "https://github.com/linluozi/treelib-perf-opt"
+Original = "https://github.com/caesar0301/treelib"
+Issues = "https://github.com/linluozi/treelib-perf-opt/issues"
+
+[tool.setuptools.packages.find]
+# ``bench/baseline`` holds a verbatim upstream copy used only by the benchmark;
+# it must never be packaged or installed.
+include = ["treelib*"]
+
+[tool.setuptools.package-data]
+treelib = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+  "ignore::DeprecationWarning",
+  "ignore::UserWarning",
+]

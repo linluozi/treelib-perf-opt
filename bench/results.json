@@ -1,0 +1,661 @@
+{
+  "environment": {
+    "python": "3.13.14",
+    "platform": "win32",
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD"
+  },
+  "method": "interleaved pairs; median of per-repetition baseline/optimized ratios; best-of-N absolute times for scale only",
+  "quick": false,
+  "results": [
+    {
+      "label": "balanced_1k: expand_tree DEPTH",
+      "note": "",
+      "baseline_best_ms": 0.568337499998961,
+      "optimized_best_ms": 0.5038362068858235,
+      "median_ratio": 1.1032368658158498,
+      "ratio_min": 0.8930336347419845,
+      "ratio_max": 1.2901422356933807,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: expand_tree WIDTH",
+      "note": "",
+      "baseline_best_ms": 2.054218750004111,
+      "optimized_best_ms": 0.46755250000387605,
+      "median_ratio": 4.393557407963985,
+      "ratio_min": 3.4894356210705415,
+      "ratio_max": 5.380945255141944,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: expand_tree ZIGZAG",
+      "note": "",
+      "baseline_best_ms": 0.6059156250444175,
+      "optimized_best_ms": 0.2654988095292494,
+      "median_ratio": 2.357228288317077,
+      "ratio_min": 1.4682385590750557,
+      "ratio_max": 3.8205206023296165,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: expand_tree DEPTH unsorted",
+      "note": "",
+      "baseline_best_ms": 0.4086551723895386,
+      "optimized_best_ms": 0.29134919354727307,
+      "median_ratio": 1.4014703079280866,
+      "ratio_min": 1.2565508829254945,
+      "ratio_max": 1.5157744759053045,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: str(tree)",
+      "note": "",
+      "baseline_best_ms": 3.471250000075088,
+      "optimized_best_ms": 2.1856642857268787,
+      "median_ratio": 1.6192164205974655,
+      "ratio_min": 1.3736046314411712,
+      "ratio_max": 1.8462074742283485,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: show(stdout=False)",
+      "note": "",
+      "baseline_best_ms": 3.763875000004191,
+      "optimized_best_ms": 2.30163000014727,
+      "median_ratio": 1.6353084552092905,
+      "ratio_min": 1.177048569925677,
+      "ratio_max": 2.016705568340348,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: save2file",
+      "note": "",
+      "baseline_best_ms": 204.854500001602,
+      "optimized_best_ms": 2.447399999937261,
+      "median_ratio": 77.24790410393598,
+      "ratio_min": 55.1364747609862,
+      "ratio_max": 88.82740757675539,
+      "repetitions": 4
+    },
+    {
+      "label": "balanced_1k: depth()",
+      "note": "",
+      "baseline_best_ms": 1.1786678571427598,
+      "optimized_best_ms": 0.16494531249122701,
+      "median_ratio": 7.105484948271505,
+      "ratio_min": 5.619510666119821,
+      "ratio_max": 8.389144521110817,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: size(level=2)",
+      "note": "",
+      "baseline_best_ms": 1.432946153867166,
+      "optimized_best_ms": 0.0013855997721042475,
+      "median_ratio": 997.1512634716016,
+      "ratio_min": 968.8945972823124,
+      "ratio_max": 1739.7130611175755,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: paths_to_leaves()",
+      "note": "",
+      "baseline_best_ms": 1.287014285740692,
+      "optimized_best_ms": 0.6556904762051307,
+      "median_ratio": 1.966762702949446,
+      "ratio_min": 1.5431425695243601,
+      "ratio_max": 2.4335115395698246,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: to_dict()",
+      "note": "",
+      "baseline_best_ms": 0.7450166666684607,
+      "optimized_best_ms": 0.7211038461649039,
+      "median_ratio": 1.0933111968251903,
+      "ratio_min": 0.852422438847884,
+      "ratio_max": 1.7064921110146394,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: to_json()",
+      "note": "",
+      "baseline_best_ms": 0.9705210526303026,
+      "optimized_best_ms": 0.9134944444263561,
+      "median_ratio": 0.9702573436472256,
+      "ratio_min": 0.9140609795870631,
+      "ratio_max": 1.5580692734577888,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: level(deepest node)",
+      "note": "",
+      "baseline_best_ms": 0.0013124633788663687,
+      "optimized_best_ms": 0.0005770776367430841,
+      "median_ratio": 2.288245067176946,
+      "ratio_min": 2.124685934906681,
+      "ratio_max": 2.6927979881634108,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: ancestor(deepest, 5) x1000",
+      "note": "",
+      "baseline_best_ms": 2.97106666645656,
+      "optimized_best_ms": 0.7741111111398721,
+      "median_ratio": 3.6984601275337736,
+      "ratio_min": 3.252458537697159,
+      "ratio_max": 4.902077801850698,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_1k: create_node x500",
+      "note": "",
+      "baseline_best_ms": 2.1231571428350953,
+      "optimized_best_ms": 1.1904466666843898,
+      "median_ratio": 1.7896493352604061,
+      "ratio_min": 1.7061998219273882,
+      "ratio_max": 1.8539165985201242,
+      "repetitions": 4
+    },
+    {
+      "label": "build 9331-node tree",
+      "note": "create_node + update_successors path",
+      "baseline_best_ms": 41.03399999985413,
+      "optimized_best_ms": 27.92569999837724,
+      "median_ratio": 1.4451546824166277,
+      "ratio_min": 1.304115063111449,
+      "ratio_max": 1.5041413466076228,
+      "repetitions": 4
+    },
+    {
+      "label": "balanced_9k: expand_tree DEPTH",
+      "note": "",
+      "baseline_best_ms": 13.349200000448036,
+      "optimized_best_ms": 9.919500000250991,
+      "median_ratio": 1.3779800382843357,
+      "ratio_min": 0.8160256253998424,
+      "ratio_max": 1.7295529008435424,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: expand_tree WIDTH",
+      "note": "",
+      "baseline_best_ms": 225.4229000009218,
+      "optimized_best_ms": 7.786350000060338,
+      "median_ratio": 23.583758290093403,
+      "ratio_min": 18.736183130386184,
+      "ratio_max": 36.44973575526673,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: expand_tree ZIGZAG",
+      "note": "",
+      "baseline_best_ms": 24.641399999381974,
+      "optimized_best_ms": 4.0781600000627805,
+      "median_ratio": 5.748861210959681,
+      "ratio_min": 4.881764221004128,
+      "ratio_max": 6.848259999498571,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: expand_tree DEPTH unsorted",
+      "note": "",
+      "baseline_best_ms": 8.80215000051976,
+      "optimized_best_ms": 6.425250000120286,
+      "median_ratio": 1.5800464934969485,
+      "ratio_min": 1.2118443368640002,
+      "ratio_max": 1.8054353815100805,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: str(tree)",
+      "note": "",
+      "baseline_best_ms": 117.8447000002052,
+      "optimized_best_ms": 30.966199999966193,
+      "median_ratio": 5.5686601167012695,
+      "ratio_min": 2.8093043768492283,
+      "ratio_max": 6.27248817614979,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: show(stdout=False)",
+      "note": "",
+      "baseline_best_ms": 118.9020999991044,
+      "optimized_best_ms": 23.155800001404714,
+      "median_ratio": 4.534842034475616,
+      "ratio_min": 3.9398003714089653,
+      "ratio_max": 5.459884321442151,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: save2file",
+      "note": "",
+      "baseline_best_ms": 2172.734000001583,
+      "optimized_best_ms": 26.83450000040466,
+      "median_ratio": 78.59197904070143,
+      "ratio_min": 65.66988154847354,
+      "ratio_max": 94.47242169453263,
+      "repetitions": 4
+    },
+    {
+      "label": "balanced_9k: depth()",
+      "note": "",
+      "baseline_best_ms": 15.088050000485964,
+      "optimized_best_ms": 3.8959999995616577,
+      "median_ratio": 3.7718652266640684,
+      "ratio_min": 2.8289659782609617,
+      "ratio_max": 4.5846868133154315,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: size(level=2)",
+      "note": "",
+      "baseline_best_ms": 13.24045000001206,
+      "optimized_best_ms": 0.003910278320251592,
+      "median_ratio": 3489.5901410234083,
+      "ratio_min": 2844.044535762617,
+      "ratio_max": 4146.668152034076,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: paths_to_leaves()",
+      "note": "",
+      "baseline_best_ms": 13.238250000540575,
+      "optimized_best_ms": 7.9725499999767635,
+      "median_ratio": 1.704368084052494,
+      "ratio_min": 1.4183744052265947,
+      "ratio_max": 1.8908135249776727,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: to_dict()",
+      "note": "",
+      "baseline_best_ms": 8.549350000066624,
+      "optimized_best_ms": 7.521849999648111,
+      "median_ratio": 1.1331024245525605,
+      "ratio_min": 0.9515274043748113,
+      "ratio_max": 1.4029087422967002,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: to_json()",
+      "note": "",
+      "baseline_best_ms": 10.255199999846809,
+      "optimized_best_ms": 8.929675000217685,
+      "median_ratio": 1.0989794908004267,
+      "ratio_min": 0.8349104059129767,
+      "ratio_max": 1.2250295297434783,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: level(deepest node)",
+      "note": "",
+      "baseline_best_ms": 0.0011338500976639427,
+      "optimized_best_ms": 0.0004996023995776763,
+      "median_ratio": 2.2818975562490755,
+      "ratio_min": 2.20400269969192,
+      "ratio_max": 2.4721126997481715,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: ancestor(deepest, 4) x1000",
+      "note": "",
+      "baseline_best_ms": 2.3695375000443164,
+      "optimized_best_ms": 0.6379403225617998,
+      "median_ratio": 3.714356055326429,
+      "ratio_min": 3.139199761029635,
+      "ratio_max": 4.393153319415384,
+      "repetitions": 9
+    },
+    {
+      "label": "balanced_9k: create_node x500",
+      "note": "",
+      "baseline_best_ms": 1.8165714285974641,
+      "optimized_best_ms": 1.0167949999413395,
+      "median_ratio": 1.8120094958949369,
+      "ratio_min": 1.7530261627037573,
+      "ratio_max": 1.9459838677288803,
+      "repetitions": 4
+    },
+    {
+      "label": "wide_5k: expand_tree DEPTH",
+      "note": "",
+      "baseline_best_ms": 45.506699998441036,
+      "optimized_best_ms": 1.898244444318051,
+      "median_ratio": 23.388480448030865,
+      "ratio_min": 19.887434118668256,
+      "ratio_max": 29.828174949389954,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: expand_tree WIDTH",
+      "note": "",
+      "baseline_best_ms": 44.299299999693176,
+      "optimized_best_ms": 2.1260500000153115,
+      "median_ratio": 21.06827867953739,
+      "ratio_min": 17.972076187354002,
+      "ratio_max": 24.281225747170012,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: expand_tree ZIGZAG",
+      "note": "",
+      "baseline_best_ms": 3.368119999868213,
+      "optimized_best_ms": 1.1800178570930646,
+      "median_ratio": 2.8563515993607216,
+      "ratio_min": 1.9751045563547662,
+      "ratio_max": 3.6072350121587036,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: expand_tree DEPTH unsorted",
+      "note": "",
+      "baseline_best_ms": 43.138200000612414,
+      "optimized_best_ms": 1.1286857143204543,
+      "median_ratio": 39.30740776915093,
+      "ratio_min": 37.41972602618183,
+      "ratio_max": 46.155038189544946,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: str(tree)",
+      "note": "",
+      "baseline_best_ms": 17.421800001102383,
+      "optimized_best_ms": 8.016999999654217,
+      "median_ratio": 2.1936837866346224,
+      "ratio_min": 1.6960745483142696,
+      "ratio_max": 2.445494534183389,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: show(stdout=False)",
+      "note": "",
+      "baseline_best_ms": 17.726000000038766,
+      "optimized_best_ms": 7.759550000173476,
+      "median_ratio": 2.3803098513513583,
+      "ratio_min": 2.097616391498264,
+      "ratio_max": 2.7614931776084024,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: save2file",
+      "note": "",
+      "baseline_best_ms": 877.5580000001355,
+      "optimized_best_ms": 8.06879999981902,
+      "median_ratio": 106.70598642178427,
+      "ratio_min": 95.53315407393322,
+      "ratio_max": 122.35203500164299,
+      "repetitions": 4
+    },
+    {
+      "label": "wide_5k: depth()",
+      "note": "",
+      "baseline_best_ms": 3.6731000000145286,
+      "optimized_best_ms": 0.8552625000106673,
+      "median_ratio": 4.355056258829545,
+      "ratio_min": 3.2212168844429567,
+      "ratio_max": 4.847055338446824,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: size(level=2)",
+      "note": "",
+      "baseline_best_ms": 2.800810000007914,
+      "optimized_best_ms": 0.8950433333666297,
+      "median_ratio": 3.1528417035200524,
+      "ratio_min": 2.9445024013448133,
+      "ratio_max": 3.3270738549867267,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: paths_to_leaves()",
+      "note": "",
+      "baseline_best_ms": 4.175424999857569,
+      "optimized_best_ms": 3.132712500018897,
+      "median_ratio": 1.266605786340633,
+      "ratio_min": 1.099031754567434,
+      "ratio_max": 1.440987642458726,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: to_dict()",
+      "note": "",
+      "baseline_best_ms": 3.3033374998012732,
+      "optimized_best_ms": 2.907219999906374,
+      "median_ratio": 1.1662303392090347,
+      "ratio_min": 1.0358104082073551,
+      "ratio_max": 1.243969344256998,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: to_json()",
+      "note": "",
+      "baseline_best_ms": 3.6425999998755287,
+      "optimized_best_ms": 3.157833333413388,
+      "median_ratio": 1.2970623206136564,
+      "ratio_min": 1.0683473980184153,
+      "ratio_max": 1.426903995279957,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: level(deepest node)",
+      "note": "",
+      "baseline_best_ms": 0.0004871264648542706,
+      "optimized_best_ms": 0.00019838460285637183,
+      "median_ratio": 2.4583531010584756,
+      "ratio_min": 2.412940854420131,
+      "ratio_max": 2.563553109490202,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: ancestor(deepest, 0) x1000",
+      "note": "",
+      "baseline_best_ms": 1.0475611110854919,
+      "optimized_best_ms": 0.2960125000015523,
+      "median_ratio": 3.5196245706912594,
+      "ratio_min": 3.2982373525358386,
+      "ratio_max": 3.8511887167326413,
+      "repetitions": 9
+    },
+    {
+      "label": "wide_5k: create_node x500",
+      "note": "",
+      "baseline_best_ms": 1.7526000000153934,
+      "optimized_best_ms": 0.9966052631697447,
+      "median_ratio": 1.828959980114381,
+      "ratio_min": 1.6935378668991055,
+      "ratio_max": 2.012184839484537,
+      "repetitions": 4
+    },
+    {
+      "label": "build 1001-deep chain",
+      "note": "",
+      "baseline_best_ms": 3.1084000002010725,
+      "optimized_best_ms": 1.9436399999904097,
+      "median_ratio": 1.7104127875216308,
+      "ratio_min": 1.5605436098876317,
+      "ratio_max": 1.7449270441495255,
+      "repetitions": 4
+    },
+    {
+      "label": "deep_1k: expand_tree DEPTH",
+      "note": "",
+      "baseline_best_ms": 0.39727321427562856,
+      "optimized_best_ms": 0.3404137931221189,
+      "median_ratio": 1.1768310176788013,
+      "ratio_min": 1.09187950868885,
+      "ratio_max": 1.299920820587133,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: expand_tree WIDTH",
+      "note": "",
+      "baseline_best_ms": 0.3976620689705857,
+      "optimized_best_ms": 0.25004843750764394,
+      "median_ratio": 1.5708411214846822,
+      "ratio_min": 1.4767121826012817,
+      "ratio_max": 1.8894339220854903,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: expand_tree ZIGZAG",
+      "note": "",
+      "baseline_best_ms": 0.3452538461575526,
+      "optimized_best_ms": 0.364096226408981,
+      "median_ratio": 0.9648879257619793,
+      "ratio_min": 0.865480073654122,
+      "ratio_max": 1.0820395355564323,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: expand_tree DEPTH unsorted",
+      "note": "",
+      "baseline_best_ms": 0.342558181827454,
+      "optimized_best_ms": 0.31160163932520946,
+      "median_ratio": 1.0999923998430814,
+      "ratio_min": 1.0059422378069849,
+      "ratio_max": 1.2052301321889707,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: str(tree)",
+      "note": "upstream: RecursionError (cannot complete at all)",
+      "baseline_best_ms": null,
+      "optimized_best_ms": 30.21960000114632,
+      "median_ratio": null,
+      "ratio_min": null,
+      "ratio_max": null,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: show(stdout=False)",
+      "note": "upstream: RecursionError (cannot complete at all)",
+      "baseline_best_ms": null,
+      "optimized_best_ms": 29.504199999792036,
+      "median_ratio": null,
+      "ratio_min": null,
+      "ratio_max": null,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: save2file",
+      "note": "upstream: RecursionError (cannot complete at all)",
+      "baseline_best_ms": null,
+      "optimized_best_ms": 32.27650000007998,
+      "median_ratio": null,
+      "ratio_min": null,
+      "ratio_max": null,
+      "repetitions": 4
+    },
+    {
+      "label": "deep_1k: depth()",
+      "note": "",
+      "baseline_best_ms": 0.2967708333269709,
+      "optimized_best_ms": 0.14278906249387546,
+      "median_ratio": 1.9929299486345877,
+      "ratio_min": 1.7900971123410128,
+      "ratio_max": 2.1795089017561753,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: size(level=2)",
+      "note": "",
+      "baseline_best_ms": 93.44099999907485,
+      "optimized_best_ms": 0.0004731542968983149,
+      "median_ratio": 191664.7876527696,
+      "ratio_min": 177676.58303968573,
+      "ratio_max": 216435.52784162542,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: paths_to_leaves()",
+      "note": "",
+      "baseline_best_ms": 0.2841203389896506,
+      "optimized_best_ms": 0.1542898437492113,
+      "median_ratio": 1.8352037443528657,
+      "ratio_min": 1.7173111780766155,
+      "ratio_max": 1.9763638347278505,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: to_dict()",
+      "note": "upstream: RecursionError (cannot complete at all)",
+      "baseline_best_ms": null,
+      "optimized_best_ms": 2.2613285714864366,
+      "median_ratio": null,
+      "ratio_min": null,
+      "ratio_max": null,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: to_json()",
+      "note": "both variants raise RecursionError",
+      "baseline_best_ms": null,
+      "optimized_best_ms": null,
+      "median_ratio": null,
+      "ratio_min": null,
+      "ratio_max": null,
+      "repetitions": 0
+    },
+    {
+      "label": "deep_1k: level(deepest node)",
+      "note": "",
+      "baseline_best_ms": 0.187251639336402,
+      "optimized_best_ms": 0.08854166667049412,
+      "median_ratio": 2.2370993599939184,
+      "ratio_min": 1.8082589368749886,
+      "ratio_max": 2.597646584469041,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: ancestor(deepest, 999) x1000",
+      "note": "",
+      "baseline_best_ms": 389.51300000007905,
+      "optimized_best_ms": 97.27500000008149,
+      "median_ratio": 3.869822001704703,
+      "ratio_min": 3.7520923743235444,
+      "ratio_max": 4.26598262510896,
+      "repetitions": 9
+    },
+    {
+      "label": "deep_1k: create_node x500",
+      "note": "",
+      "baseline_best_ms": 1.7937545453605708,
+      "optimized_best_ms": 0.9745863636370897,
+      "median_ratio": 1.8303361787563788,
+      "ratio_min": 1.7797559964943532,
+      "ratio_max": 1.8654495223775127,
+      "repetitions": 4
+    },
+    {
+      "label": "deep1200: str(tree)",
+      "note": "upstream: RecursionError",
+      "baseline_best_ms": null,
+      "optimized_best_ms": 42.3795999995491,
+      "median_ratio": null,
+      "ratio_min": null,
+      "ratio_max": null,
+      "repetitions": 3
+    },
+    {
+      "label": "deep3000: str(tree)",
+      "note": "upstream: RecursionError",
+      "baseline_best_ms": null,
+      "optimized_best_ms": 253.34159999874828,
+      "median_ratio": null,
+      "ratio_min": null,
+      "ratio_max": null,
+      "repetitions": 3
+    },
+    {
+      "label": "deep6000: str(tree)",
+      "note": "upstream: RecursionError",
+      "baseline_best_ms": null,
+      "optimized_best_ms": 1115.5213999991247,
+      "median_ratio": null,
+      "ratio_min": null,
+      "ratio_max": null,
+      "repetitions": 3
+    }
+  ]
+}

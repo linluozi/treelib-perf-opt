@@ -1,0 +1,2 @@
+# Runtime dependency (same as upstream treelib)
+six>=1.13.0

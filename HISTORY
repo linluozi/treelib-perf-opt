@@ -1,0 +1,81 @@
+# History
+
+## treelib-perf-opt (this fork)
+
+Oct 18, 2026 - v1.8.0.post1
+Performance and robustness rewrite on top of upstream 83b3b87. Public API unchanged;
+two intentional bug fixes (save2file now truncates; deep-tree rendering no longer
+raises RecursionError). Measured on a 9,331-node tree: BFS traversal 23.6x, size(level)
+~3,500x, save2file 78.6x, str/show 5.6x, depth 3.8x, ancestor 3.7x, create_node 1.8x.
+- expand_tree: list frontier with `queue[1:]` copies replaced by a deque (O(n*w) -> O(n));
+  ZIGZAG assembled level-by-level instead of re-prepending.
+- size(level=n): single descent instead of one root walk per node (O(n*d) -> O(n)).
+- save2file: one file handle instead of one per rendered line; no more duplicate output.
+- __get_iter / to_dict: explicit stacks, so rendering and dict export survive deep chains.
+  to_dict keeps the recursive fast path and falls back only on RecursionError.
+- show/__str__: lines joined once instead of O(n^2) `+=` accumulation.
+- ancestor: one upward pass instead of calling level() per hop (O(d^2) -> O(d)).
+- paths_to_leaves: per-node path memoisation instead of a root walk per leaf.
+- update_successors: plain dispatch instead of 4 closures + locals() per call.
+- Added bench/ (benchmark, differential harness, mutation test, chart generator), 31
+  regression tests, and a verbatim upstream copy under bench/baseline for comparison.
+
+## Upstream history (treelib)
+
+Jul 30, 2026
+Added tests for basic data and more falsy data values.
+
+Jul 25, 2026
+from_json() no longer collapses falsy data values (0, False, "") to None.
+
+Mar 27, 2023 V1.6.3
+Apply to black code style. Migrate future to six
+
+
+Oct 13, 2019 V1.5.6
+Add ability to independently mutate multiple shallow copies of same initial tree.
+
+
+Aug 10, 2017 V1.4.0
+Abandon supporting Python 3.2 since v1.4.0.
+
+
+Mar 27, 2014 V1.2.6
+Node identifier supports multiple data types beyond int and str.
+Finish depth() and leaves() routines.
+Add siblings() routine.
+Add unit test to the whole module.
+
+
+Dec 21, 2013 V1.2.5
+Add root() routine to Tree class.
+Add all_nodes() routine to Tree class.
+
+
+May 1, 2013
+Pulish the module on PyPI with version 1.2 under GNU General Pulic License
+version 3.
+
+
+Mar 21, 2013
+Replace the list implementation with dict to improve performance to a
+large extend. Thanks to @aronadaal
+
+
+Dec 30, 2012
+Make a pretty print routine to the tree and give some examples in README
+
+
+Dec 19, 2012
+Little modification and add get_node routine by @pgebhard.
+
+
+Jul 13, 2012
+Add rsearch routines to implement reversed searching from leaf to tree root.
+
+
+Jul 07, 2012
+Initiate the project on GitHub.
+For my research paper, I need the python implementation of tree structure.
+Based on the imcompleted code of Brett A. Kromkamp, I finished all methods
+and added subtree and paste routines.
